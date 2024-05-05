@@ -24,6 +24,14 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+h2.titulo{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+}
+h2.titulo span{
+    color: #9CFF1E;
+}
 
 /* ESTILO DO CABEÇALHO */
 header{
@@ -98,7 +106,7 @@ section.topo .flex{
     gap: 90px;
 }
 .topo .txt-topo-site h1{
-    font-size: 42px;
+    font-size: 44px;
     color: #ffffff;
     line-height: 25px;
 }
@@ -107,6 +115,7 @@ section.topo .flex{
     font-size: 90px;
 }
 .topo .txt-topo-site p{
+    text-align: justify;
     background-color: rgba(0, 0, 0, 0.632);
     padding: 20px;
     border-radius: 20px;
@@ -129,4 +138,39 @@ section.topo .flex{
     100%{
         top: 30px;
     }
+}
+
+/* ESTILO DOS CURSOS */
+section.cursos{
+    background-image: url("../images/paralax2.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 45px 4%;
+}
+section.cursos .flex{
+    gap: 20px;
+}
+.cursos .especialidades-box{
+    border-radius: 20px;
+    color: var(--color-4);
+    padding: 40px;
+    margin-top: 45px;
+    transition: 0.3s;
+}
+.cursos .especialidades-box i{
+    font-size: 70px;
+    color: var(--color-3);
+}
+.cursos .especialidades-box h3{
+    font-size: 22px;
+    margin: 15px 0;
+}
+.cursos .especialidades-box p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 20px;
+}
+.cursos .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.375);
 }
