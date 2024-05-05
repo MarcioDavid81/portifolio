@@ -100,7 +100,7 @@ section.topo .flex{
 .topo .txt-topo-site h1{
     font-size: 42px;
     color: #ffffff;
-    line-height: 20px;
+    line-height: 25px;
 }
 .topo .txt-topo-site h1 span{
     color: #9CFF1E;
@@ -115,4 +115,18 @@ section.topo .flex{
     margin-top: 40px;
     line-height: 20px;
     margin-bottom: 40px;
+}
+
+.topo .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
