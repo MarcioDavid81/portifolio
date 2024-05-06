@@ -6,6 +6,7 @@
     --font-1: "Nunito", sans-serif;
     --font-2: "Roboto", sans-serif;
 }
+
 /* ESTILO GERAL */
 *{
     margin: 0;
@@ -78,6 +79,7 @@ header .btn-contato button:hover{
     transform: scale(1.1);
     background-color: #9CFF1E;
 }
+
 /* ESTILO DO TOPO */
 section.topo{
     background-image: url("../images/paralax.jpg");
@@ -140,6 +142,57 @@ section.topo .flex{
     }
 }
 
+/* ESTILO DO SOBRE */
+section.sobre{
+    background-color: #212121;
+    padding: 45px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #ffffff;
+}
+.sobre .txt-sobre h2{
+    font-size: 36px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    display: block;
+    color: #9CFF1E;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 20px;
+}
+.sobre .img-sobre img{
+    border-radius: 20px;
+}
+.sobre .txt-sobre .btn-social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sobre .txt-sobre button{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #9CFF1E;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.sobre .txt-sobre button:hover{
+    box-shadow: 0px 0px 8px #9CFF1E;
+    transition: 0.3s;
+    transform: scale(1.1);
+    background-color: #9CFF1E;
+}
+
 /* ESTILO DOS CURSOS */
 section.cursos{
     background-image: url("../images/paralax2.jpg");
@@ -148,7 +201,7 @@ section.cursos{
     padding: 45px 4%;
 }
 section.cursos .flex{
-    gap: 20px;
+    gap: 10px;
 }
 .cursos .especialidades-box{
     border-radius: 20px;
@@ -173,4 +226,143 @@ section.cursos .flex{
 .cursos .especialidades-box:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.375);
+}
+
+/* ESTILO DO PORTIFÓLIO */
+
+section.portifolio{
+    background-color: #212121;
+    padding: 45px 4%;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.751);
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+#nutritiva{
+    background-image: url("../images/nutritiva.png");
+    transition: 5s;
+}
+#paula{
+    background-image: url("../images/paula.png");
+    transition: 5s;
+}
+#bellaflor{
+    background-image: url("../images/bellaflor.png");
+    transition: 0.5s;
+}
+
+/* ESTILO DO CONTATO */
+section.contato{
+    background-image: url("../images/paralax3.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 45px 4%;
+}
+.contato .txt-contato p{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 20px;
+}
+form{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #00000060;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    height: 200px;
+    max-height: 500px;
+}
+form input:focus{
+    border: 2px solid #9CFF1E;
+    background-color: #000000;
+}
+form textarea:focus{
+    border: 2px solid #9CFF1E;
+    background-color: #000000;
+}
+form input::placeholder{
+    color: #9CFF1E;
+}
+form textarea::placeholder{
+    color: #9CFF1E;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 100px;
+    background-color: #9CFF1E;
+    color: #000000;
+    font-weight: 800;
+    cursor: pointer;
+}
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #9CFF1E;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* ESTILO DO RODAPÉ */
+footer{
+    background-color: #212121;
+    padding: 45px 4%;
+}
+footer .menu-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
 }
