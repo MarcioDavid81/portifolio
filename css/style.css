@@ -366,3 +366,34 @@ footer .flex{
     justify-content: space-between;
     align-items: center;
 }
+footer .line-footer p{
+    padding: 20px 0;
+    text-align: center;
+}
+.menu-footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #9CFF1E;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.menu-footer .btn-social{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+footer .line-footer p i{
+    color: var(--color-3);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .line-footer p a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer .final{
+    border-top: 2px solid var(--color-3);
+}
