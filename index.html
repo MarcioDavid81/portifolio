@@ -2,6 +2,7 @@
 <html lang="pt-be">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- GGOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
     <!-- FIM BOOTSTRAP ICONS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="menu.js" defer></script>
     <title>Marcio David - Portifólio</title>
 </head>
 <body>
@@ -34,12 +36,38 @@
             <!-- FIM MENU -->
             <!-- BOTÃO CONTATO -->
             <div class="btn-contato">
-            <a href="https://wa.link/fyvd8f">
-                <button>Contato</button>
-            </a>
+                <a href="https://wa.link/fyvd8f">
+                    <button>Contato</button>
+                </a>
             </div>
             <!-- FIM BOTÃO CONTATO -->
+            <!-- BOTÃO MENU MOBILE -->
+            <div class="btn-abrir-menu-mobile" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <!-- FIM BOTÃO MENU MOBILE -->
+            <!-- MENU MOBILE -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cursos">Formação</a></li>
+                        <li><a href="#portifolio">Portifólio</a></li>
+                        <li><a href="https://wa.link/fyvd8f" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- FIM MENU MOBILE -->
+            <!-- OVERLAY -->
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
         </div>
+        <!-- FIM INTERFACE -->
     </header> <!-- FIM HEADER -->
     <main> 
         <section class="topo" id="inicio">
