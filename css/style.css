@@ -125,6 +125,7 @@ header .btn-contato button:hover{
     padding: 20px 4%;
     display: block;
     text-align: right;
+    cursor: pointer;
 }
 .overlay-menu{
     background-color: rgba(0, 0, 0, 0.677);
@@ -472,6 +473,11 @@ footer .final{
 }
 
 /* RESPONSIVIDADE */
+@media screen and (min-width: 1144px){
+    .btn-abrir-menu-mobile{
+             display: none;
+    }
+}
 @media screen and (max-width: 1143px){
     /* GERAIS */
     .flex{
