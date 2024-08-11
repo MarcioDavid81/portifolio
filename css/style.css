@@ -14,6 +14,16 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    color: var(--color-1);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-3);
+}
+::-webkit-scrollbar-button{
+    background-color: var(--color-3);
+}
 body{
     background-color: #000000;
     height: 100vh;
@@ -36,13 +46,23 @@ h2.titulo span{
 
 /* ESTILO DO CABEÇALHO */
 header{
-    padding: 40px 4%;
+    width: 100%;
+    padding: 10px 4%;
     background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 9999;
 }
 header > .interface{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header .logo a img{
+    width: 100px;
+    height: auto
 }
 header a{
     display: inline-block;
@@ -412,7 +432,7 @@ form .btn-enviar input:hover{
 /* ESTILO DO RODAPÉ */
 footer{
     background-color: #212121;
-    padding: 45px 4%;
+    padding: 5px 4%;
 }
 footer .menu-footer{
     display: flex;
@@ -423,14 +443,18 @@ footer .flex{
     justify-content: space-between;
     align-items: center;
 }
+footer .logo a img{
+    width: 100px;
+    height: auto;
+}
 footer .line-footer p{
-    padding: 20px 0;
+    padding: 5px 0;
     text-align: center;
 }
 .menu-footer .btn-social button{
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
     background-color: #9CFF1E;
     border: 0;
     border-radius: 30px;
@@ -470,6 +494,10 @@ footer .final{
     color: var(--color-3);
     font-size: 12px;
 }
+.creditos a{
+    color: var(--color-4);
+    text-decoration: none;
+}
 
 /* RESPONSIVIDADE */
 @media screen and (min-width: 1144px){
@@ -492,6 +520,7 @@ footer .final{
         display: none;
     }
     header{
+        position: static;
         border-radius: 0;
     }
     #flex{
