@@ -67,7 +67,7 @@ header .logo a img{
 header a{
     display: inline-block;
     text-decoration: none;
-    color: #7d7d7d;
+    color: #fff;
     transition: 0.3s;
 }
 header a:hover{
